@@ -23,12 +23,13 @@
         gap: 10px;
         margin-top: 10px;
     }
-    photos img {
-        width: 40%;
-        height: auto;
-        border-radius: 10px;
-        object-fit: cover;
-    }
+photos img {
+    flex: 1;            /* Фото растягиваются равномерно */
+    max-width: 100%;    /* Не выходят за экран */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
     cit {
         display: block;
         position: relative;
