@@ -17,19 +17,25 @@
         color: #555;
         margin-top: 15px;
     }
+    hr {
+        border: none;
+        height: 2px;
+        background: linear-gradient(to right, #007BFF, #00C6FF);
+        margin: 25px 0;
+        border-radius: 5px;
+    }
     photos {
         display: flex;
-        flex-wrap: wrap; /* Перенос если не влазят */
+        flex-direction: column; /* В столбик */
         gap: 10px;
         margin-top: 10px;
     }
-photos img {
-    flex: 1;            /* Фото растягиваются равномерно */
-    max-width: 100%;    /* Не выходят за экран */
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-}
+    photos img {
+        width: 100%;      /* Растягиваем на всю ширину */
+        height: auto;     /* Сохраняем пропорции */
+        border-radius: 10px;
+        object-fit: cover;
+    }
     cit {
         display: block;
         position: relative;
@@ -58,14 +64,9 @@ photos img {
         bottom: -10px;
         right: 10px;
     }
-	hr {
-    border: none;
-    height: 2px;
-    background: linear-gradient(to right, #007BFF, #00C6FF);
-    margin: 20px 0;
-    border-radius: 5px;
-	}
-
+    cit:hover {
+        background: #eef6ff;
+    }
 </style>
 </head>
 <body>
